@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latihan Tailwind</title>
+    <title>Jobless Community</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
@@ -30,12 +30,27 @@
   <body>
     <main>
       <div
-        class="w-screen h-screen bg-gradient-to-r from-purple to-yellow to-green to-darkenGreen"
+        class="
+          w-screen
+          h-screen
+          bg-gradient-to-r
+          from-purple
+          to-yellow to-green to-darkenGreen
+        "
       >
         <!-- bg blur -->
         <div class="w-screen h-screen mx-auto bg-gray blur-background">
           <!-- container -->
-          <div class="max-w-5xl mx-auto py-5">
+          <div
+            class="
+              max-w-5xl max-h-screen
+              mx-auto
+              py-5
+              flex flex-col
+              justify-center
+              gap-y-4
+            "
+          >
             <nav class="flex flex-row items-center justify-between">
               <div class="logo">
                 <h1 class="font-bold text-2xl">Jobless</h1>
@@ -43,22 +58,35 @@
               <!-- list menu -->
               <ul class="list-menu flex flex-row items-center gap-x-12">
                 <li>
-                  <a href="#" class="text-gray-300 text-base">Home</a>
+                  <a href="#" class="text-black text-base font-medium">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="text-gray-300 text-base">Discover</a>
+                  <a href="#" class="text-black text-base font-light"
+                    >Discover</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-gray-300 text-base">Post a Job</a>
+                  <a href="#" class="text-black text-base font-light"
+                    >Post a Job</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-gray-300 text-base">Contact Us</a>
+                  <a href="#" class="text-black text-base font-light"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
               <!-- end of list menu -->
               <a
                 href="#"
-                class="font-semibold text-base px-5 py-2 border border-gray-50 rounded-sm"
+                class="
+                  font-semibold
+                  text-base
+                  px-5
+                  py-2
+                  border-2 border-slate-200
+                  rounded-sm
+                "
                 >Sign Up</a
               >
             </nav>
@@ -75,7 +103,7 @@
                     Get Connected to the Best Remote <br />
                     Jobs in Your Field
                   </h1>
-                  <p class="text-sm font-normal text-gray-100 mt-4">
+                  <p class="text-black text-sm font-light mt-3">
                     Discover a wide range of remote opportunities on our
                     platform and <br />
                     take control of your career
@@ -86,7 +114,14 @@
                 <div class="button-container flex items-center gap-x-6">
                   <a
                     href="#"
-                    class="font-semibold text-white text-base px-4 py-3 bg-purple rounded-full"
+                    class="
+                      font-semibold
+                      text-white text-base
+                      px-4
+                      py-3
+                      bg-purple
+                      rounded-full
+                    "
                     >Explore Remote Jobs</a
                   >
                   <a href="#" class="font-semibold text-purple underline"
@@ -100,7 +135,183 @@
             <!-- end of section promo -->
             <section id="job">
               <h3 class="font-semibold text-xl">Featured Jobs</h3>
-              <div></div>
+              <div class="mt-4 flex items-center justify-between gap-x-4">
+                <!-- card 1 -->
+                <div
+                  class="
+                    card card-1
+                    bg-purple
+                    p-6
+                    max-w-[360px]
+                    text-white
+                    flex flex-col
+                    gap-y-5
+                    rounded-lg
+                  "
+                >
+                  <!-- card header -->
+                  <div
+                    class="
+                      card-header
+                      flex flex-row
+                      items-center
+                      justify-start
+                      gap-x-3
+                    "
+                  >
+                    <img src="images/figma.svg" alt="" />
+                    <div>
+                      <h3 class="font-semibold text-xl">Front-End Developer</h3>
+                      <p class="text-sm font-light text-gray-100">Figma</p>
+                    </div>
+                  </div>
+                  <!-- end of card header -->
+                  <!-- card body -->
+                  <div class="card-body">
+                    <p class="text-base font-light text-gray-100">
+                      We are looking for an experienced <br />
+                      front-end developer to join our team.
+                    </p>
+                  </div>
+                  <!-- end of card body -->
+                  <hr class="w-full h-[1px] bg-gray opacity-20" />
+                  <div class="card-footer flex items-center justify-between">
+                    <div
+                      class="
+                        py-1
+                        px-4
+                        bg-[#3532FF]
+                        rounded-full
+                        text-white
+                        font-semibold
+                        text-xs
+                      "
+                    >
+                      <span>Rush</span>
+                    </div>
+                    <h3 class="font-semibold text-[14px]">$70,000 - $90,000</h3>
+                  </div>
+                </div>
+                <!-- end of card 1 -->
+
+                <!-- card 2 -->
+                <div
+                  class="
+                    card card-2
+                    bg-white
+                    p-6
+                    max-w-[360px]
+                    text-black
+                    flex flex-col
+                    gap-y-5
+                    rounded-lg
+                  "
+                >
+                  <!-- card header -->
+                  <div
+                    class="
+                      card-header
+                      flex flex-row
+                      items-center
+                      justify-start
+                      gap-x-3
+                    "
+                  >
+                    <img src="images/facebook.svg" alt="" />
+                    <div>
+                      <h3 class="font-semibold text-xl">Data Scientist</h3>
+                      <p class="text-sm font-light text-gray-100">Facebook</p>
+                    </div>
+                  </div>
+                  <!-- end of card header -->
+                  <!-- card body -->
+                  <div class="card-body">
+                    <p class="text-base font-light text-gray-100">
+                      We are seeking a data scientist to join <br />
+                      our team.
+                    </p>
+                  </div>
+                  <!-- end of card body -->
+                  <hr class="w-full h-[1px] bg-gray opacity-20" />
+                  <div class="card-footer flex items-center justify-between">
+                    <div
+                      class="
+                        py-1
+                        px-4
+                        bg-[#EAEBED]
+                        rounded-full
+                        text-black
+                        font-semibold
+                        text-xs
+                      "
+                    >
+                      <span class="text-black opacity-100 z-10"> Python</span>
+                    </div>
+                    <h3 class="font-semibold text-[14px]">
+                      $100,000 - $130,000
+                    </h3>
+                  </div>
+                </div>
+                <!-- end of card 2 -->
+
+                <!-- card 3 -->
+                <div
+                  class="
+                    card card-3
+                    bg-white
+                    p-6
+                    max-w-[360px]
+                    text-black
+                    flex flex-col
+                    gap-y-5
+                    rounded-lg
+                  "
+                >
+                  <!-- card header -->
+                  <div
+                    class="
+                      card-header
+                      flex flex-row
+                      items-center
+                      justify-start
+                      gap-x-3
+                    "
+                  >
+                    <img src="images/technical writer.svg" alt="" />
+                    <div>
+                      <h3 class="font-semibold text-xl">Technical Writer</h3>
+                      <p class="text-sm font-light text-gray-100">Vercel</p>
+                    </div>
+                  </div>
+                  <!-- end of card header -->
+                  <!-- card body -->
+                  <div class="card-body">
+                    <p class="text-base font-light text-gray-100">
+                      We are seeking a technical writer to <br />
+                      join our team.
+                    </p>
+                  </div>
+                  <!-- end of card body -->
+                  <hr class="w-full h-[1px] bg-gray opacity-20" />
+                  <div class="card-footer flex items-center justify-between">
+                    <div
+                      class="
+                        py-1
+                        px-4
+                        bg-[#EAEBED]
+                        rounded-full
+                        text-black
+                        font-semibold
+                        text-xs
+                      "
+                    >
+                      <span> Documentation</span>
+                    </div>
+                    <h3 class="font-semibold text-[14px]">$60,000 - $80,000</h3>
+                  </div>
+                </div>
+                <!-- end of card 3 -->
+              </div>
             </section>
           </div>
           <!-- end of container -->
