@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Tailwind</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purple: "#0500FF",
+              yellow: "#F8FB76",
+              green: "#4EFF75",
+              darkenGreen: "#00FFD1",
+              gray: "#F6FAFF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main>
+      <div
+        class="w-screen h-screen bg-gradient-to-r from-purple to-yellow to-green to-darkenGreen"
+      >
+        <!-- bg blur -->
+        <div class="w-screen h-screen mx-auto bg-gray blur-background">
+          <!-- container -->
+          <div class="max-w-5xl mx-auto py-5">
+            <nav class="flex flex-row items-center justify-between">
+              <div class="logo">
+                <h1 class="font-bold text-2xl">Jobless</h1>
+              </div>
+              <!-- list menu -->
+              <ul class="list-menu flex flex-row items-center gap-x-12">
+                <li>
+                  <a href="#" class="text-gray-300 text-base">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 text-base">Discover</a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 text-base">Post a Job</a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 text-base">Contact Us</a>
+                </li>
+              </ul>
+              <!-- end of list menu -->
+              <a
+                href="#"
+                class="font-semibold text-base px-5 py-2 border border-gray-50 rounded-sm"
+                >Sign Up</a
+              >
+            </nav>
+
+            <!-- section promo -->
+            <section id="promo" class="mt-12">
+              <!-- flex container -->
+              <div
+                class="max-w-md mx-auto flex flex-col items-center space-y-8"
+              >
+                <!-- text container -->
+                <div class="text-container text-center">
+                  <h1 class="font-semibold text-2xl">
+                    Get Connected to the Best Remote <br />
+                    Jobs in Your Field
+                  </h1>
+                  <p class="text-sm font-normal text-gray-100 mt-4">
+                    Discover a wide range of remote opportunities on our
+                    platform and <br />
+                    take control of your career
+                  </p>
+                </div>
+                <!-- end of text container -->
+                <!-- button container -->
+                <div class="button-container flex items-center gap-x-6">
+                  <a
+                    href="#"
+                    class="font-semibold text-white text-base px-4 py-3 bg-purple rounded-full"
+                    >Explore Remote Jobs</a
+                  >
+                  <a href="#" class="font-semibold text-purple underline"
+                    >How it works?</a
+                  >
+                </div>
+                <!-- end of button container -->
+              </div>
+              <!-- end of flex container -->
+            </section>
+            <!-- end of section promo -->
+            <section id="job">
+              <h3 class="font-semibold text-xl">Featured Jobs</h3>
+              <div></div>
+            </section>
+          </div>
+          <!-- end of container -->
+        </div>
+        <!-- end of bg blur -->
+      </div>
+    </main>
+  </body>
+</html>
